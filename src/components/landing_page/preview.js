@@ -64,7 +64,7 @@ const Preview = () => {
       })
       .then((res) => {
         if (res.data) {
-          // setShowNote(res.data);
+          setShowNote(res.data);
         }
       });
   }, [code]);
