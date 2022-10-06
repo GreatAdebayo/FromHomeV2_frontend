@@ -73,7 +73,7 @@ const Preview = () => {
     setvideoUrl(video);
 
     //update progress
-    // let token = sessionStorage.Token;
+    let token = sessionStorage.Token;
     axios
       .post(
         `${Baseurl}progress`,
