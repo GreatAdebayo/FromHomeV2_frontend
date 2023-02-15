@@ -31,6 +31,7 @@ const Dashboard = () => {
   const [profile, setProfile] = useState({});
   const dispatch = useDispatch();
   useEffect(() => {
+    console.log("S");
     let token = sessionStorage.Token;
     if (token) {
       axios

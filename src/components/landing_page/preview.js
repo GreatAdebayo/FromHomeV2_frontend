@@ -70,6 +70,7 @@ const Preview = () => {
   }, [code]);
 
   const playVideo = (video) => {
+    console.log(video);
     setvideoUrl(video);
 
     //update progress
@@ -204,7 +205,7 @@ const Preview = () => {
           >
             <ReactPlayer
               className="react-player"
-              url={Mediaurl + videoUrl}
+              url={videoUrl}
               width="100%"
               height="100%"
               controls={true}
